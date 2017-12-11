@@ -6,7 +6,7 @@
 
 from nltk import word_tokenize, pos_tag
 from nltk.corpus import wordnet as wn
-
+#from nltk.corpus import nps_chat as npsc
 
 def penn_to_wn(tag):
     """ Convert between a Penn Treebank tag to a simplified Wordnet tag """
@@ -81,10 +81,14 @@ def sentence_similarity(sentence1, sentence2):
 
 
 sentences = [
-    "Tell me something about yourself."
+    "Clock rotates?"
 ]
 
-focus_sentence = "I am a motivated developer."
+from SpeechToText import text
+
+focus_sentence = text
+
+#focus_sentence = "Apple is a fruit"
 
 for sentence in sentences:
     #print("Similarity(\"%s\", \"%s\") = %s" % (focus_sentence, sentence, sentence_similarity(focus_sentence, sentence)))

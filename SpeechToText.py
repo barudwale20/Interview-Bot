@@ -1,4 +1,3 @@
-# Python 2.x program for Speech Recognition
 
 import speech_recognition as sr
 from gtts import gTTS
